@@ -1,0 +1,902 @@
+2025-05-28 15:33:50 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:33:51 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:33:51 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:33:58 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:34:15 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:34:38 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:34:38 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:34:48 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:35:08 [main] INFO  pages.LoginPage - Attempting login with username: invalid
+2025-05-28 15:35:08 [main] INFO  pages.LoginPage - Entering username: invalid
+2025-05-28 15:35:11 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 15:35:11 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 15:38:08 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 15:38:08 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:38:11 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:38:31 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:38:31 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:38:42 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:37) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:57) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3108c4b5a23f49a1ffd233ec60bd5fc1, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54070}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54070/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3108c4b5a23f49a1ffd233ec60bd5fc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 15:38:42 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:38:42 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:39:07 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:39:07 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:39:17 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:37) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:57) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3108c4b5a23f49a1ffd233ec60bd5fc1, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54070}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54070/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3108c4b5a23f49a1ffd233ec60bd5fc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 15:39:17 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:39:17 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:39:29 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 15:39:29 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 15:39:39 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 15:39:39 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 15:40:58 [TestNG-test-Login and Advanced Tests-1] WARN  pages.LoginPage - Login error not displayed
+2025-05-28 15:40:58 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+java.lang.AssertionError: Login error should be displayed for invalid credentials expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at LoginTest.testLogin(LoginTest.java:25) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+2025-05-28 15:40:58 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 15:49:56 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 15:49:56 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:49:59 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:50:23 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:50:23 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:50:33 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:37) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:57) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cb97f9f0aca16992a59ea742517314f, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54216/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9cb97f9f0aca16992a59ea742517314f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 15:50:33 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:50:33 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:50:46 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:50:46 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:50:57 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:37) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:57) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cb97f9f0aca16992a59ea742517314f, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54216/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9cb97f9f0aca16992a59ea742517314f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 15:50:57 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:50:57 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:51:08 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 15:51:08 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 15:51:18 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 15:51:18 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 15:51:29 [TestNG-test-Login and Advanced Tests-1] WARN  pages.LoginPage - Login error not displayed
+2025-05-28 15:51:29 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+java.lang.AssertionError: Login error should be displayed for invalid credentials expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at LoginTest.testLogin(LoginTest.java:25) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+2025-05-28 15:51:29 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 15:54:09 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 15:54:09 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:54:12 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:54:34 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:54:34 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:54:44 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:37) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:57) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35b3b867d2f732954ae3c0444b166ff9, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54296/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35b3b867d2f732954ae3c0444b166ff9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 15:54:44 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:54:44 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:55:12 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:55:12 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:55:22 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:37) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:57) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35b3b867d2f732954ae3c0444b166ff9, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54296/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35b3b867d2f732954ae3c0444b166ff9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 15:55:22 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:55:22 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:55:31 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 15:55:31 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 15:55:41 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 15:55:42 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 15:56:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 15:56:10 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 15:56:10 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 15:57:11 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 15:57:11 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:57:14 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:57:38 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:57:38 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:57:49 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:37) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:57) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60964ff81dcee93a43392f01ce47333e, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54374}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54374/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60964ff81dcee93a43392f01ce47333e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 15:57:49 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:57:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:58:00 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 15:58:00 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 15:58:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 15:58:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 15:58:33 [TestNG-test-Login and Advanced Tests-1] WARN  pages.LoginPage - Login error not displayed
+2025-05-28 15:58:33 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+java.lang.AssertionError: Login error should be displayed for invalid credentials expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at LoginTest.testLogin(LoginTest.java:30) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+2025-05-28 15:58:33 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 15:58:33 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 15:58:39 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 15:58:39 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 15:58:45 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 15:58:45 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 15:59:05 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 15:59:05 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 15:59:05 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 16:12:27 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 16:12:27 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:12:29 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:12:37 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:12:37 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:12:38 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:12:38 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:12:48 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login successful
+2025-05-28 16:12:48 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:12:48 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:12:48 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:12:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:12:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:12:59 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:38) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:58) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f90259b907baa25ac5c3267b2551ae2, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54928/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f90259b907baa25ac5c3267b2551ae2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 16:13:00 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:13:00 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:13:01 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 16:13:01 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 16:13:11 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:38) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:58) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:21) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f90259b907baa25ac5c3267b2551ae2, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54928/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f90259b907baa25ac5c3267b2551ae2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 16:13:11 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 16:14:38 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 16:14:38 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:14:41 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:14:58 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:14:58 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:14:58 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:14:59 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:15:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login successful
+2025-05-28 16:15:10 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:15:10 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:15:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:15:21 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:15:21 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:15:31 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:38) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:58) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a655cc2feaa25f5b5b1aec019bd7b5a0, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55074/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a655cc2feaa25f5b5b1aec019bd7b5a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 16:15:31 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:15:31 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:15:42 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 16:15:42 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 16:15:52 [TestNG-test-Login and Advanced Tests-1] ERROR TestListener - Test failed: testLogin
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: username' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) ~[selenium-support-4.20.0.jar:?]
+	at pages.BasePage.waitForElementToBeVisible(BasePage.java:23) ~[classes/:?]
+	at pages.BasePage.sendKeys(BasePage.java:36) ~[classes/:?]
+	at pages.LoginPage.enterUsername(LoginPage.java:38) ~[classes/:?]
+	at pages.LoginPage.login(LoginPage.java:58) ~[classes/:?]
+	at LoginTest.testLogin(LoginTest.java:27) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=136.0.7103.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a655cc2feaa25f5b5b1aec019bd7b5a0, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.116, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55074/devtoo..., se:cdpVersion: 136.0.7103.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a655cc2feaa25f5b5b1aec019bd7b5a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349) ~[selenium-remote-driver-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.20.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287) ~[selenium-support-4.20.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.20.0.jar:?]
+	... 22 more
+2025-05-28 16:15:52 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 16:16:08 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 16:16:08 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:16:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:16:26 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:16:26 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:16:26 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:16:27 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:16:38 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 16:16:38 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:16:38 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:16:38 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:16:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 16:16:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 16:16:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:16:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:16:59 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 16:17:00 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:17:00 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:17:00 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:17:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:17:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:17:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:17:10 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:17:21 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login successful
+2025-05-28 16:17:21 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:17:21 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 16:17:38 [main] INFO  TestListener - Test suite started: Login and Advanced Tests
+2025-05-28 16:17:38 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:17:41 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:17:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:17:49 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:17:50 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:17:50 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:17:53 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 16:17:53 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:17:53 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:17:53 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:17:56 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 16:17:56 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 16:17:57 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:17:57 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:18:00 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 16:18:00 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:18:00 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test started: testLogin
+2025-05-28 16:18:00 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:18:04 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:18:04 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:18:04 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 16:18:04 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:18:09 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login successful
+2025-05-28 16:18:09 [TestNG-test-Login and Advanced Tests-1] INFO  TestListener - Test passed: testLogin
+2025-05-28 16:18:09 [main] INFO  TestListener - Test suite finished: Login and Advanced Tests
+2025-05-28 16:19:10 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:19:15 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:19:15 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:19:16 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 16:19:16 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:19:18 [main] INFO  pages.LoginPage - Login successful
+2025-05-28 16:19:18 [main] INFO  pages.LoginPage - Login successful
+2025-05-28 16:19:18 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:19:19 [main] INFO  pages.LoginPage - Attempting login with username: invalid
+2025-05-28 16:19:19 [main] INFO  pages.LoginPage - Entering username: invalid
+2025-05-28 16:20:12 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:20:18 [main] INFO  pages.LoginPage - Attempting login with username: invalid
+2025-05-28 16:20:18 [main] INFO  pages.LoginPage - Entering username: invalid
+2025-05-28 16:20:19 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 16:20:20 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:20:22 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:20:22 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:20:22 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:20:23 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 16:20:23 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:20:33 [main] WARN  pages.LoginPage - Login not successful
+2025-05-28 16:20:51 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:20:52 [main] INFO  pages.LoginPage - Attempting login with username: invalid
+2025-05-28 16:20:53 [main] INFO  pages.LoginPage - Entering username: invalid
+2025-05-28 16:20:58 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 16:20:58 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:21:00 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:21:00 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:21:00 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:21:01 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 16:21:01 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:21:03 [main] INFO  pages.LoginPage - Login successful
+2025-05-28 16:21:04 [main] INFO  pages.LoginPage - Login successful
