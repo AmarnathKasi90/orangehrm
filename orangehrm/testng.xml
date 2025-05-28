@@ -17,6 +17,7 @@
         <classes>
             <class name="LoginTest"/>
             <class name="SimpleTest"/>
+            <class name="YourTestClass"/>
 
 <!--            <class name="AdvancedTestNGDemo"/>-->
         </classes>

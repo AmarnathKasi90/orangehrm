@@ -5,6 +5,7 @@ import utils.DriverManager;
 public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
+        System.setProperty("allure.results.directory", "target/allure-results");
         // WebDriver is initialized lazily in DriverManager
         DriverManager.getDriver();
     }

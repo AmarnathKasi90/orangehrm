@@ -995,3 +995,50 @@ Session ID: a655cc2feaa25f5b5b1aec019bd7b5a0
 2025-05-28 18:44:12 [main] INFO  pages.LoginPage - Entering password
 2025-05-28 18:44:12 [main] INFO  pages.LoginPage - Clicking login button
 2025-05-28 18:44:14 [main] INFO  pages.LoginPage - Login successful
+2025-05-28 19:06:10 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:06:13 [main] INFO  pages.LoginPage - Attempting login with username: invalid
+2025-05-28 19:06:13 [main] INFO  pages.LoginPage - Entering username: invalid
+2025-05-28 19:06:14 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 19:06:14 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:06:16 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:06:16 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 19:06:16 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 19:06:17 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 19:06:17 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:06:27 [main] WARN  pages.LoginPage - Login not successful
+2025-05-28 19:12:37 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:12:40 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 19:12:40 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 19:12:41 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 19:12:41 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:12:43 [main] INFO  pages.LoginPage - Login error displayed
+2025-05-28 19:12:43 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:12:44 [main] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 19:12:44 [main] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 19:12:44 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 19:12:45 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:12:46 [main] INFO  pages.LoginPage - Login error displayed
+2025-05-28 19:12:46 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:12:46 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 19:12:46 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 19:12:47 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 19:12:47 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:12:49 [main] INFO  pages.LoginPage - Login successful
+2025-05-28 19:25:15 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:25:18 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 19:25:18 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 19:25:19 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 19:25:19 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:25:21 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 19:25:21 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:25:22 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: WrongUser
+2025-05-28 19:25:22 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: WrongUser
+2025-05-28 19:25:22 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 19:25:23 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:25:24 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login error displayed
+2025-05-28 19:25:24 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Opening login page
+2025-05-28 19:25:24 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 19:25:24 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 19:25:25 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Entering password
+2025-05-28 19:25:25 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Clicking login button
+2025-05-28 19:25:27 [TestNG-test-Login and Advanced Tests-1] INFO  pages.LoginPage - Login successful
