@@ -17,8 +17,7 @@ public class LoginPage extends BasePage {
     @FindBy(css = "button[type='submit']")
     private WebElement loginButton;
 
-   // @FindBy(css = ".oxd-alert-content-text")
-    @FindBy(xpath = "//p[text()='Invalid credentials']")
+    @FindBy(css = ".oxd-alert-content-text")
     private WebElement errorMessage;
 
     @FindBy(css = "header .oxd-topbar-header-breadcrumb")

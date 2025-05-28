@@ -900,3 +900,15 @@ Session ID: a655cc2feaa25f5b5b1aec019bd7b5a0
 2025-05-28 16:21:01 [main] INFO  pages.LoginPage - Clicking login button
 2025-05-28 16:21:03 [main] INFO  pages.LoginPage - Login successful
 2025-05-28 16:21:04 [main] INFO  pages.LoginPage - Login successful
+2025-05-28 16:32:01 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:32:07 [main] INFO  pages.LoginPage - Attempting login with username: invalid
+2025-05-28 16:32:07 [main] INFO  pages.LoginPage - Entering username: invalid
+2025-05-28 16:32:09 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 16:32:09 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:32:11 [main] INFO  pages.LoginPage - Opening login page
+2025-05-28 16:32:11 [main] INFO  pages.LoginPage - Attempting login with username: Admin
+2025-05-28 16:32:11 [main] INFO  pages.LoginPage - Entering username: Admin
+2025-05-28 16:32:12 [main] INFO  pages.LoginPage - Entering password
+2025-05-28 16:32:12 [main] INFO  pages.LoginPage - Clicking login button
+2025-05-28 16:32:19 [main] INFO  pages.LoginPage - Login successful
+2025-05-28 16:32:19 [main] INFO  pages.LoginPage - Login successful
